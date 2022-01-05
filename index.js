@@ -24,12 +24,12 @@ async function run() {
     const usersCollection = database.collection("users");
     const reviewCollection = database.collection("reviews");
 
-    //add api
-    app.post("/products", async (req, res) => {
-      const product = req.body;
-      const result = await productCollection.insertOne(product);
-      res.json(result);
-    });
+    // //add api
+    // app.post("/products", async (req, res) => {
+    //   const product = req.body;
+    //   const result = await productCollection.insertOne(product);
+    //   res.json(result);
+    // });
 
     //add order
     app.post("/orders", async (req, res) => {
